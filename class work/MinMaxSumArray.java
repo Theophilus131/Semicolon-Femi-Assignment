@@ -15,15 +15,17 @@ for(int i =0; i< numbers.length; i++){
 total += numbers[i];
 }
 
-//for()
+for(int count = 0; count< numbers.length; count++){ 
+    
+      total -= numbers.length[count];
+    
  
   if(total > maxSum)
 	maxSum = total;
   
   if(total < minSum)
         minSum = total;
-
-
+}
 
 return new int[] {minSum, maxSum};
 
