@@ -1,17 +1,17 @@
-
+import java.util.Arrays;
 public class ArraySort{
 
 public static int [] sortingArray(int [] number){
 
 
-for(int i = 0; i < number.length; i++){
+for(int index = 0; index < number.length; index++){
 
- for(int j = i + 1; j < number.length; j++){
+ for(int j = index + 1; j < number.length; j++){
 
-      if(number[i] > number[j]){
+      if(number[index] > number[j]){
 
-	int temp = number[i];
-	number[i] = number[j];
+	int temp = number[index];
+	number[index] = number[j];
 	number[j] = temp;
 		}
 
@@ -20,9 +20,15 @@ for(int i = 0; i < number.length; i++){
 	}
 
 
-
 	return number;
 
 
 	}
+
+
+public static void main(String[] args){
+ int [] input = {7,2,9,3,0};
+System.out.print(Arrays.toString(sortingArray(input)));
+}
+
 }
