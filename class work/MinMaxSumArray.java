@@ -11,13 +11,13 @@ int total = 0;
  int minSum = Integer.MAX_VALUE;
  int maxSum = Integer.MIN_VALUE;
 
-for(int i =0; i< numbers.length; i++){
+for(int i = 0; i < numbers.length; i++){
 total += numbers[i];
 }
 
-for(int count = 0; count< numbers.length; count++){ 
+for(int count = 0; count < numbers.length; count++){ 
     
-      total -= numbers.length[count];
+      total += numbers[count];
     
  
   if(total > maxSum)

@@ -22,13 +22,12 @@ for(int index = 0; index < number.length; index++){
 
 	return number;
 
-
 	}
 
 
 public static void main(String[] args){
  int [] input = {7,2,9,3,0};
 System.out.print(Arrays.toString(sortingArray(input)));
-}
+	}
 
 }
